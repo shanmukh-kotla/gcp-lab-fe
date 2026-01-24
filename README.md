@@ -42,3 +42,19 @@ A dedicated GCP project was created to isolate all lab resources and follow best
 
 ### Project Created in GCP Console
 ![GCP Project Created](screenshots/01-project-created.png)
+
+## Billing Enabled
+
+![Billing Enabled](screenshots/02-billing-enabled.png)
+
+_Billing successfully enabled for the GCP project._
+
+## API's Enabled
+
+![API Enabled](screenshots/03-api-enabled.png)
+
+_API successfully enabled for the GCP project._
+
+## Jumpbox VM Created
+
+![Jumpbox VM Created](screenshots/04-jumpbox-vm-created.png)
