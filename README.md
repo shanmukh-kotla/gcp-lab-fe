@@ -38,7 +38,7 @@ A dedicated GCP project was created to isolate all lab resources and follow best
 
 - Project ID: `devops-lab-project-485312`
 - Billing: Enabled
-- Purpose: DevOps / SRE end-to-end lab
+- Purpose: application end to end lab
 
 ### Project Created in GCP Console
 ![GCP Project Created](screenshots/01-project-created.png)
