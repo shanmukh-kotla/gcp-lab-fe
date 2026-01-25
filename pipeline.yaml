@@ -16,7 +16,7 @@ deploy:
   namespace: lab-internal
   release: fe-app
   chartRef: oci://us-central1-docker.pkg.dev/devops-lab-project-485312/apps/lab-app-chart
-  chartVersion: "0.1.0"
+  chartVersion: "0.2.0"
   valuesFile: values.yaml
   timeout: 10m
 
