@@ -15,7 +15,8 @@ deploy:
   region: us-central1
   namespace: lab-internal
   release: fe-app
-  chartRef: charts/lab-app-chart      # local chart path in repo (simple + works now)
+  chartRef: oci://us-central1-docker.pkg.dev/devops-lab-project-485312/apps/app-template
+  chartVersion: "0.1.0"
   valuesFile: values.yaml
   timeout: 10m
 
