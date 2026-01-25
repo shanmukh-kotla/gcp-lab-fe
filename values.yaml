@@ -1,3 +1,13 @@
+nameOverride: "fe-app-lab"
+fullnameOverride: "fe-app-lab"
+
+requests:
+  cpu: "100m"
+  memory: "128Mi"
+limits:
+  cpu: "500m"
+  memory: "512Mi"
+
 service:
   name: fe-app
   port: 80
@@ -8,9 +18,8 @@ container:
   port: 8080
 
 image:
-  # ✅ must include image name (fe-app)
-  repository: us-central1-docker.pkg.dev/devops-lab-project-485312/apps/fe-app
-  tag: "1.0"   # placeholder; pipeline will override via --set image.tag=<gitSHA/build#>
+  repository: us-central1-docker.pkg.dev/devops-lab-project-485312/apps/lab-app-chart
+  tag: "1.0" 
 
 probes:
   readiness:
