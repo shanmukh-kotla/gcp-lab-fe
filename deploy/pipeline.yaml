@@ -11,17 +11,11 @@ build:
 
 deploy:
   chart:
-    repo: "github.com/your-org/reusable-helm-charts"
-    name: "reusable-app"
-    path: "charts/reusable-app"
+    repo: "us-central1-docker.pkg.dev/devops-lab-project-485312/apps"
+    name: "app-template"
+    path: "charts/lab-app-chart"
   valuesFiles:
     - deploy/values.yaml
   environments:
     dev:
       valuesFiles: [deploy/values-dev.yaml]
-    qa:
-      valuesFiles: [deploy/values-qa.yaml]
-    uat:
-      valuesFiles: [deploy/values-uat.yaml]
-    prod:
-      valuesFiles: [deploy/values-prod.yaml]

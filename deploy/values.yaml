@@ -8,8 +8,8 @@ container:
   port: 8080
 
 image:
-  repository: jfrog.yourcompany.com/docker-dev/fe-app
-  tag: "REPLACED_BY_PIPELINE"
+  repository: us-central1-docker.pkg.dev/devops-lab-project-485312/apps
+  tag: "1.0"
 
 probes:
   readiness:
