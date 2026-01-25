@@ -1,0 +1,21 @@
+gcp:
+  projectId: devops-lab-project-485312
+  credentialsId: gcp-sa-jenkins  # <-- your Jenkins credential id (secret file)
+
+image:
+  region: us-central1
+  repo: apps                          # GAR Docker repo name
+  name: fe-app                        # image name
+  context: frontend                   # docker build context folder
+  tagFrom: git                        # git | buildNumber | explicit
+  # tag: "1.0"                        # only if tagFrom: explicit
+
+deploy:
+  cluster: lab-gke-autopilot
+  region: us-central1
+  namespace: lab-internal
+  release: fe-app
+  chartRef: charts/lab-app-chart      # local chart path in repo (simple + works now)
+  valuesFile: values.yaml
+  timeout: 10m
+
