@@ -1,0 +1,22 @@
+service:
+  name: fe-app
+  port: 80
+  targetPort: 8080
+  type: LoadBalancer
+
+container:
+  port: 8080
+
+image:
+  repository: jfrog.yourcompany.com/docker-dev/fe-app
+  tag: "REPLACED_BY_PIPELINE"
+
+probes:
+  readiness:
+    httpGet:
+      path: /healthz
+      port: 8080
+  liveness:
+    httpGet:
+      path: /healthz
+      port: 8080
